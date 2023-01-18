@@ -1,0 +1,15 @@
+{
+    "name":"First",
+    "version":"1.0",
+    "description":"Prototype version",
+    "manifest_version":3,
+    "action":{
+         "default_title":"Hey",
+         "default_popup":"index.html",
+         "default_icon":{
+            "32":"icon.png",
+            "64":"icon.png",
+            "128":"icon.png"
+         }
+        }
+}
