@@ -1,4 +1,4 @@
-function test() {
+function openYouTube() {
     
     let word = document.querySelector("#searchbar").value
     if (word!=""){
@@ -8,4 +8,10 @@ function test() {
         window.open("https://www.youtube.com", "_blank")
     }
 }
-document.querySelector("#text").addEventListener("click",test);
+
+document.querySelector("#text").addEventListener("click",openYouTube);
+document.querySelector("#searchbar").addEventListener("keypress",function(event) {
+    if (event.key=="Enter"){
+        event.preventDefault();
+        document.querySelector("#text").click();
+}});
